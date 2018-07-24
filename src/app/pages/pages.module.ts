@@ -18,12 +18,22 @@ import { PAGES_ROUTES } from './pages.routes';
 // Temporal
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
+import { AccouSettingComponent } from './accou-setting/accou-setting.component';
 
 
 
 @NgModule({
-  declarations: [DashboardComponent, ProgressComponent, Graficas1Component, PagesComponent, IncrementadorComponent, GraficoDonaComponent],
-  exports: [DashboardComponent, ProgressComponent, Graficas1Component, PagesComponent],
+  declarations: [DashboardComponent,
+    ProgressComponent,
+    Graficas1Component,
+    PagesComponent,
+    IncrementadorComponent,
+    GraficoDonaComponent,
+    AccouSettingComponent],
+  exports: [DashboardComponent,
+    ProgressComponent,
+    Graficas1Component,
+    PagesComponent],
   imports : [
     SharedModule,
     PAGES_ROUTES,
